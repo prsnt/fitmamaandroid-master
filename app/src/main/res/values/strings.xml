@@ -1,0 +1,167 @@
+<resources>
+    <string name="app_name">FitMama Fitness &amp; Nutrition</string>
+
+    <!--TODO change the Base URL -->
+    <!--<string name="BASE_URL">http://fitsoo.silicontechnolabs.com/api/</string>-->
+    <string name="BASE_URL">http://dashboard.fitmama.com/api/users/</string>
+    <!--<string name="BASE_URL">http://fitmama.silicontechnolabs.com/api/users/</string>-->
+
+    <string name="login">login</string>
+    <string name="inappapi">inappapi</string>
+    <string name="subscription_API">subscription</string>
+    <string name="checkuserstatus">checkuserstatus</string>
+    <string name="inappresponse">inappresponse</string>
+    <string name="workouts">workouts</string>
+    <string name="gethoursusage">gethoursusage</string>
+    <string name="chanlleges_api">chanlleges</string>
+    <string name="programlist">programlist</string>
+    <string name="buyproduct">buyproduct</string>
+    <string name="programdetail">programdetail</string>
+    <string name="contactus">contactus</string>
+    <string name="cmspage">cmspage</string>
+    <string name="workoutlog">workoutlog</string>
+    <string name="programvideoslog">programvideoslog</string>
+    <string name="changepassword">changepassword</string>
+    <string name="forgot_password">forgotpassword</string>
+    <string name="viewdetail">viewdetail</string>
+    <string name="signup">signup</string>
+    <string name="editprofile">editprofile</string>
+
+    <string name="facebook_app_id">482876648717244</string>
+    <string name="fb_login_protocol_scheme">fb482876648717244</string>
+
+
+    <string name="fitsoo_email">support@fitmama.com</string>
+    <string name="fitsoo_web">www.fitmama.com</string>
+    <string name="str_dob">Date of Birth:</string>
+    <string name="str_notifications">Notifications</string>
+
+    <!--Login screen-->
+    <string name="login_txt_newmember">New Member?</string>
+    <string name="login_txt_signup">Sign up</string>
+    <string name="change_password">CHANGE PASSWORD</string>
+    <string name="login_txt_loginwith">Or Login with</string>
+    <string name="login_txt_forgotpwd">Forgot Password</string>
+    <string name="login_txt_login">Login</string>
+    <string name="login_txt_facebook">Facebook</string>
+    <string name="login_txt_google">Google +</string>
+    <string name="login_txt_terms">By Continuing you accept our \nPrivacy Policy and Terms of Service </string>
+
+
+    <!--Welcome Screen-->
+    <string name="str_ready_to_geT_fit">Are you ready to get fit?</string>
+    <string name="str_static_welcome">WELCOME TO FITMAMA,</string>
+    <string name="str_empty"></string>
+
+    <string name="str_lets_start">LET\'S GET STARTED</string>
+    <string name="str_enter">ENTER</string>
+
+    <!--Forgot  Password-->
+    <string name="forgot_txt_info">We can reset your password if you\nlet us know your email address:</string>
+    <string name="forgot_btn_submit">Reset my Password</string>
+
+    <string name="str_challenge">Challenge</string>
+    <string name="str_workout">Workout</string>
+    <string name="str_program">Programs</string>
+    <string name="str_today">Today</string>
+    <string name="str_circuitTraining">Circuit Training</string>
+    <string name="str_workout_log">Workout Log</string>
+    <string name="str_program_log">Program Log</string>
+    <string name="str_instructions">Instructions</string>
+    <string name="str_presenter">Presenter:</string>
+    <string name="str_workout_focus">Workout Focus:</string>
+    <string name="str_yesterday">Yesterday</string>
+    <string name="str_tomorrow">Tomorrow</string>
+    <string name="hint_send_message">Send Message</string>
+    <string name="hint_type_msg">Type Your Message</string>
+    <string name="hint_type_subject">Subject</string>
+    <string name="cast_app_id">7AEECEEE</string>
+
+    <!--Signup screen-->
+    <string name="signup_txt_newmember">Already a member?</string>
+    <string name="signup_txt_signwith">Or Sign up with</string>
+    <string name="signup_txt_firstname">First Name</string>
+    <string name="signup_txt_lastname">Last Name</string>
+    <string name="signup_txt_dob">Date of Birth</string>
+
+    <!--Navigation Menu-->
+    <string name="nav_home">Home</string>
+    <string name="nav_challenge">Challenge</string>
+    <string name="nav_workout">Workout</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_contact">Contact Us</string>
+    <string name="contact_us">Contact Us</string>
+
+    <string name="APPLICATION_TOKEN">Zml0c29vOmZpdHNvb0Aj</string>
+
+
+    <string name="error_user_locked">Your account has been Blocked, please contact Administrator.</string>
+    <string name="error_account_deleted">Your account has been Deleted, please contact Administrator.</string>
+    <string name="internet_avail">Please check your internet connection.</string>
+
+    <string name="str_logout_message">Are you sure you want to logout?</string>
+    <string name="str_close_app_message">Are you sure you want to close the app?</string>
+    <string name="str_error_email_missing">Please enter email address.</string>
+    <string name="str_help">You can see the videos and programs based on the selected language.</string>
+    <string name="str_error_email_format">Please enter valid email address.</string>
+    <string name="str_error_password_missing">Please enter password.</string>
+    <!--<string name="str_error_password_length">Password should contain minimum 6 or maximum 15 alphanumeric, special character, upper case and lower case letter.</string>-->
+    <string name="str_error_password_length">Password should contain minimum 6 or maximum 15.</string>
+    <string name="str_error_first_name">Please enter first name.</string>
+    <string name="str_error_last_name">Please enter last name.</string>
+    <string name="str_error_dob">Please select date of birth.</string>
+    <string name="str_old_password_error">Please enter old password.</string>
+    <string name="str_new_password_error">Please enter new password.</string>
+    <string name="str_confirm_password_error">Please enter confirm password.</string>
+    <string name="str_password_and_confirm_password">Password and confirm password should be same.</string>
+    <string name="str_enter_subject">Please provide a subject.</string>
+    <string name="str_enter_message">Please provide a message.</string>
+    <string name="str_please_wait">Please wait..</string>
+    <string name="str_saving_your_progress">Saving your progress please wait..</string>
+    <!--<string name="str_login_progress_message">Logging in please wait!</string>-->
+    <!--<string name="str_profile_detail">Fetching data of profile data please wait!</string>-->
+
+    <string name="programs">Programs</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="buy_now">Purchase now</string>
+    <string name="home">Home</string>
+    <string name="free_challange">Challenge</string>
+    <string name="workout">Workout</string>
+    <string name="program">Program</string>
+    <string name="programInner">programInner</string>
+    <string name="programExtra">programExtra</string>
+    <string name="more">More</string>
+    <string name="settings">Settings</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="select_language">Select Language</string>
+    <string name="english">English</string>
+    <string name="hebrew">Hebrew</string>
+    <string name="language">Language: </string>
+    <!--<string name="alert_access_program">You have not Subscribe. Please contact to our support team at support@fitsoo.com.</string>-->
+    <string name="alert_access_program">Access has been denied by Admin.\nPlease contact to our support team at support@fitmama.com.</string>
+    <string name="no_program_log_available">No Program log available.</string>
+    <string name="no_workout_log_available">No workout log available.</string>
+    <string name="purchase_now">Purchase Now</string>
+    <string name="program_manual">Program Manual</string>
+    <string name="choose_your_nsubscription_plan">Choose your \nsubscription plan</string>
+    <string name="subscription_text">The home for busy women around the world.\nGet a Quick result in less time and be the best version \nof yourself.</string>
+    <string name="subscription_description">Get the daily workout and fitness motivation you need with FitMama Unique workout and special programs to target different areas of your body. Subscription is auto-renewable which means that once purchased it will be auto-renewed every month until you cancel it 24 hours prior to the end of the current period.</string>
+    <string name="welcome_to_fitmama">Welcome to FitMama</string>
+    <string name="nis_4_per_day">4 NIS per day</string>
+    <string name="_199_nis_per_month_on_a_monthly_subscription"><font color = "black" size = "15">119 NIS per month</font> (on a monthly subscription)</string>
+    <string name="nis_per_day_2_8">2.8 NIS per day</string>
+    <string name="nis_999_per_year_on_an_annual_subscription"><font color = "black" size = "15">999 NIS per year</font> (on a yearly subscription)</string>
+    <string name="skip_for_now"><u>Skip for Now</u></string>
+    <string name="expiration_date">Expiration Date: </string>
+    <string name="monthly">Monthly</string>
+    <string name="yearly">Yearly</string>
+    <string name="canceled">Canceled</string>
+    <string name="subscription">Subscription</string>
+    <string name="not_subscription">"No subscription found"</string>
+    <string name="NOTICE">"NOTICE"</string>
+    <string name="monthly_sub">com.fitmama.monthlyplan</string>
+    <string name="yearly_sub">com.fitmama.yearlyplan</string>
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rel_thumbparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt_head_indicator">
+
+        <ImageView
+            android:id="@+id/img_thumb"
+            android:layout_width="@dimen/wo_thumb_challenge_size"
+            android:layout_height="@dimen/wo_thumb_challenge_size"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/challenge2" />
+
+        <ImageView
+            android:id="@+id/img_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/play_circular" />
+    </RelativeLayout>
+
+
+    <com.fitsoo.view.CustomTextView
+        android:id="@+id/txtBottomDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_thumbparent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5dp"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:tag="100"
+        android:text="Tabata"
+        android:textColor="@color/textcolor_dark"
+        android:textSize="@dimen/_large_text_size" />
+
+</RelativeLayout>

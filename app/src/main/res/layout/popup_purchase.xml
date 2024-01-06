@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <com.fitsoo.view.CustomTextView
+        android:id="@+id/customTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:tag="100"
+        android:text="Premium Program"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_extra_large_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.fitsoo.view.CustomTextView
+        android:id="@+id/customTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:tag="100"
+        android:text="To view program please purchase"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/_large_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customTextView" />
+
+    <com.fitsoo.view.CustomButton
+        android:id="@+id/btn_Purchase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_or_option"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_pink_small_rounded_corner"
+        android:tag="100"
+        android:text="@string/purchase_now"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_medium_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customTextView2" />
+
+    <com.fitsoo.view.CustomTextView
+        android:id="@+id/customTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:tag="100"
+        android:text="CANCEL"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/_extra_large_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Purchase" />
+</androidx.constraintlayout.widget.ConstraintLayout>

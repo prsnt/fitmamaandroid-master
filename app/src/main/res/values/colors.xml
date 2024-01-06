@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="green">#78C906</color>
+    <color name="dark_green">#5fa202</color>
+    <color name="pink">#D10169</color>
+    <color name="google">#dc4238</color>
+    <color name="fbblue">#2b59a2</color>
+    <color name="line">#717171</color>
+    <color name="textcolor">#b5b5b5</color>
+    <color name="textcolor_dark">#7d7d7d</color>
+    <color name="grey_white">#eae8e8</color>
+    <color name="light_grey">#E0E0E0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="light_black">#201c1c</color>
+    <color name="alpha_white">#80FFFFFF</color>
+    <color name="nav_bg">#b22078</color>
+    <color name="progress_bar">#e77fbe</color>
+    <color name="seekbar_progress">#e77fbe</color>
+    <color name="red">#ff0000</color>
+    <color name="blue">#4f9ce9</color>
+    <color name="orange">#fd9405</color>
+</resources>

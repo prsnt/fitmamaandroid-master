@@ -1,0 +1,43 @@
+Release=== cfeGc839ijrysb1cXVrUHYlmKEk=
+Generate keyhash for facebook:
+keytool -exportcert -alias fitsoo -storepass fitsoo -keystore /home/nancy/Desktop/Desktop/NANCY-PROJECTS/FitnessApp/KEYSTORE/fitsoo.jks | openssl sha1 -binary | openssl base64
+
+WORKING::
+keytool -exportcert -alias gscpcr -storepass gscpcr -keystore "/home/android2/svn_new_project/gscpcradnroid/Android build/gscpcr.jks" | openssl sha1 -binary | openssl base64
+
+
+
+Debug== NyO2TCq6gDm6G2pxBXQoySrJPEw=
+Generate
+keytool -exportcert -alias androiddebugkey -keystore ~/.android/debug.keystore | openssl sha1 -binary | openssl base64
+Enter keystore password:  
+
+
+Keystore Details:
+
+Alias= fitsoo
+key=-fitsoo
+password =fitsoo
+
+
+
+======================================================
+
+vaibhav.silicontest@gmail.com
+(space)Apple@123
+
+generate sha-1 for release:
+STEPS::
+nancy@NANCY:~$ cd /usr/lib/jvm/java-1.7.0-openjdk-amd64
+nancy@NANCY:/usr/lib/jvm/java-1.7.0-openjdk-amd64$ cd bin/
+nancy@NANCY:/usr/lib/jvm/java-1.7.0-openjdk-amd64/bin$ keytool -list -v -keystore /home/nancy/Desktop/Desktop/NANCY-PROJECTS/FitnessApp/KEYSTORE/fitsoo.jks -alias fitsoo -storepass fitsoo -keypass fitsoo
+
+COMMAND::
+keytool -list -v -keystore /home/nancy/Desktop/Desktop/NANCY-PROJECTS/FitnessApp/KEYSTORE/fitsoo.jks -alias fitsoo -storepass fitsoo -keypass fitsoo
+
+SHA1::
+71:F7:86:73:CD:FD:8A:3A:F2:B1:BD:5C:5D:5A:D4:1D:89:66:28:49 
+
+playstore credentials
+shirkoren@fitsoo.com
+Yalishay0806

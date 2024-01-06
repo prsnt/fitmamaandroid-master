@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include"
+        android:background="@drawable/bg">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/chooseplan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:text="@string/choose_your_nsubscription_plan"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/include" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="60dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="32dp"
+                android:background="@color/pink"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chooseplan" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/welcome_to_fitmama"
+                android:textColor="@color/pink"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/subscription_text"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:paddingLeft="@dimen/_15dp"
+                android:paddingRight="@dimen/_15dp"
+                android:text="@string/subscription_description"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="@dimen/_20dp"
+                android:background="@drawable/unselect"
+                app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLeft"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:background="@drawable/circle_bg"
+                    android:backgroundTint="@color/textcolor_dark">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/monthly" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:layout_toLeftOf="@+id/imgArrow"
+                    android:layout_toRightOf="@+id/relativeLeft"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="@dimen/_15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nis_4_per_day"
+                        android:textColor="@color/pink"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5dp"
+                            android:gravity="center_horizontal"
+                            android:paddingLeft="3dp"
+                            android:text="@string/_199_nis_per_month_on_a_monthly_subscription"
+                            android:textColor="@color/textcolor_dark"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_30dp"
+                    android:src="@drawable/arrow_unselect" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relative2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="@dimen/_20dp"
+                android:background="@drawable/unselect"
+                app:layout_constraintTop_toBottomOf="@+id/relative">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLeft2"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="22dp"
+                    android:background="@drawable/circle_bg"
+                    android:backgroundTint="@color/pink">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/yearly" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:layout_toLeftOf="@+id/imgArrow2"
+                    android:layout_toRightOf="@+id/relativeLeft2"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingRight="@dimen/_15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nis_per_day_2_8"
+                        android:textColor="@color/pink"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5dp"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="@dimen/_10dp"
+                        android:text="@string/nis_999_per_year_on_an_annual_subscription"
+                        android:textColor="@color/textcolor_dark"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgArrow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_30dp"
+                    android:src="@drawable/arrow_select" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtSkip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10dp"
+                android:text="@string/skip_for_now"
+                android:textColor="@color/pink"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relative2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</RelativeLayout>

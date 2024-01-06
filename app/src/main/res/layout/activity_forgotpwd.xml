@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@android:color/black" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/login_lyt_bottom"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/login_lyt_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/login_lyt_bottom"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_padding_large"
+            android:paddingRight="@dimen/activity_padding_large"
+            android:paddingTop="@dimen/activity_padding_large">
+
+
+            <ImageView
+                android:layout_width="@dimen/lg_app_logo_width"
+                android:layout_height="@dimen/lg_app_logo_height"
+                android:layout_above="@+id/txt_info_email"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/fitmama" />
+
+            <com.fitsoo.view.CustomTextView
+                android:id="@+id/txt_info_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/edt_email"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_30dp"
+                android:gravity="center_horizontal"
+                android:tag="100"
+                android:text="@string/forgot_txt_info"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_medium_text_size" />
+
+
+            <com.fitsoo.view.CustomEdittext
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btn_reset_password"
+                android:layout_marginTop="@dimen/_20dp"
+                android:alpha="0.8"
+                android:background="@drawable/edittext_bg"
+                android:drawableLeft="@mipmap/mail_grey"
+                android:drawablePadding="@dimen/activity_padding_small"
+                android:hint="Email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/activity_padding_small"
+                android:tag="100"
+                android:textColor="@color/textcolor"
+                android:textColorHint="@color/line" />
+
+
+            <com.fitsoo.view.CustomButton
+                android:id="@+id/btn_reset_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20dp"
+                android:background="@color/pink"
+                android:tag="100"
+                android:text="@string/forgot_btn_submit"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_medium_text_size" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/signup_img_goback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.7"
+        android:padding="@dimen/activity_padding_small"
+        android:src="@mipmap/grey_back" />
+
+
+    <LinearLayout
+        android:id="@+id/login_lyt_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/green"
+        android:gravity="center"
+        android:padding="@dimen/activity_padding_medium">
+
+        <com.fitsoo.view.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="103"
+            android:text="@string/login_txt_newmember"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_medium_text_size" />
+
+        <com.fitsoo.view.CustomTextView
+            android:id="@+id/txt_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_margin_xtrasmall"
+            android:tag="101"
+            android:text="@string/login_txt_signup"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_medium_text_size" />
+    </LinearLayout>
+</RelativeLayout>

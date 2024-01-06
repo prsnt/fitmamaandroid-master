@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <com.fitsoo.view.CustomTextView
+            android:id="@+id/txtPageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10dp"
+            android:tag="100"
+            android:text="@string/str_workout"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_extra_large_text_size"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekbar_workout"
+            style="@style/CustomProgressBarHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPageTitle"
+            android:layout_marginTop="@dimen/_10dp"
+            android:max="400"
+            android:paddingLeft="@dimen/_15dp"
+            android:paddingRight="@dimen/_15dp"
+            android:thumb="@drawable/circle_pinkbg"
+            android:thumbTintMode="multiply" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_workout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekbar_workout"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_15dp" />
+
+        <com.fitsoo.view.CustomButton
+            android:id="@+id/btn_enter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recycle_workout"
+            android:layout_marginLeft="@dimen/_30dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_30dp"
+            android:background="@drawable/bg_pink_small_rounded_corner"
+            android:tag="100"
+            android:text="@string/str_enter"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_medium_text_size" />
+
+
+        <com.fitsoo.view.CustomTextView
+            android:id="@+id/txtPrograms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_enter"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10dp"
+            android:tag="100"
+            android:text="@string/programs"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_extra_large_text_size"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPrograms"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/linear"
+                android:layout_alignBottom="@+id/linear"
+                android:alpha="0.6"
+                android:background="#DFDFDF" />
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.fitsoo.view.CustomTextView
+                    android:id="@+id/txtProgram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:tag="100"
+                    android:text="@string/str_program"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_extra_large_text_size"
+                    android:textStyle="bold" />
+
+                <SeekBar
+                    android:id="@+id/seekbar_Programs"
+                    style="@style/CustomProgressBarHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtProgram"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:max="400"
+                    android:paddingLeft="@dimen/_15dp"
+                    android:paddingRight="@dimen/_15dp"
+                    android:thumb="@drawable/circle_pinkbg"
+                    android:thumbTintMode="multiply" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_Programs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seekbar_Programs"
+                    android:layout_marginLeft="@dimen/_15dp"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_marginRight="@dimen/_15dp" />
+
+                <com.fitsoo.view.CustomButton
+                    android:id="@+id/btn_enter_Programs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recycle_Programs"
+                    android:layout_marginLeft="@dimen/_30dp"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:layout_marginRight="@dimen/_30dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/bg_pink_small_rounded_corner"
+                    android:tag="100"
+                    android:text="@string/str_enter"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_medium_text_size" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relative"
+            android:layout_marginTop="@dimen/_20dp"
+            android:background="#F6F6F6">
+
+            <com.fitsoo.view.CustomTextView
+                android:id="@+id/txtChallenge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_15dp"
+                android:tag="100"
+                android:text="@string/str_challenge"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_extra_large_text_size"
+                android:textStyle="bold" />
+
+            <com.fitsoo.view.CustomTextView
+                android:id="@+id/txtChallengeDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtChallenge"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_20dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_20dp"
+                android:gravity="center_horizontal"
+                android:tag="100"
+                android:textColor="@color/textcolor_dark"
+                android:textSize="@dimen/_medium_text_size" />
+
+
+            <com.fitsoo.view.CustomButton
+                android:id="@+id/btn_enter_challenge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtChallengeDesc"
+                android:layout_marginLeft="@dimen/_30dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginRight="@dimen/_30dp"
+                android:layout_marginBottom="@dimen/_20dp"
+                android:background="@drawable/bg_pink_small_rounded_corner"
+                android:tag="100"
+                android:text="@string/str_enter"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_medium_text_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

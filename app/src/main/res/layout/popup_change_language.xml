@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <com.fitsoo.view.CustomTextView
+        android:id="@+id/customTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Change Language"
+        android:tag="100"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/_large_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customTextView">
+
+        <com.fitsoo.view.CustomEdittext
+            android:id="@+id/edt_selectLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginRight="11dp"
+            android:layout_toLeftOf="@+id/imgHelp"
+            android:alpha="0.8"
+            android:background="@drawable/edittext_bg"
+            android:drawableLeft="@drawable/language"
+            android:drawableRight="@mipmap/grey_back"
+            android:drawablePadding="@dimen/activity_padding_small"
+            android:focusable="false"
+            android:gravity="left"
+            android:hint="@string/select_language"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textColorHint="@color/light_black"
+            android:padding="@dimen/activity_padding_small"
+            android:tag="100"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/_medium_text_size" />
+    </RelativeLayout>
+
+    <com.fitsoo.view.CustomButton
+        android:id="@+id/btn_Save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_or_option"
+        android:layout_marginLeft="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_30dp"
+        android:layout_marginRight="@dimen/_20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_pink_small_rounded_corner"
+        android:tag="100"
+        android:text="@string/save"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_medium_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLanguage" />
+</androidx.constraintlayout.widget.ConstraintLayout>

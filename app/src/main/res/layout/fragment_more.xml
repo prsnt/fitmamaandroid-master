@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.MoreFragment">
+
+    <RelativeLayout
+        android:id="@+id/relativeMyProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_30dp"
+                android:layout_height="@dimen/_30dp"
+                android:padding="@dimen/_5dp"
+                android:tint="@color/pink"
+                android:src="@mipmap/ic_my_profile" />
+
+            <com.fitsoo.view.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:tag="100"
+                android:text="My Profile"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/_medium_text_size" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/_10dp"
+            android:src="@mipmap/right_workout_grey" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeContactUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_30dp"
+                android:layout_height="@dimen/_30dp"
+                android:padding="@dimen/_5dp"
+                android:tint="@color/pink"
+                app:srcCompat="@mipmap/ic_contact_us" />
+
+            <com.fitsoo.view.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:tag="100"
+                android:text="Contact Us"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/_medium_text_size" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/_10dp"
+            android:src="@mipmap/right_workout_grey" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeFacebookMore">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_30dp"
+                android:layout_height="@dimen/_30dp"
+                android:padding="7dp"
+                android:tint="@color/pink"
+                app:srcCompat="@drawable/ic_facebook" />
+
+            <com.fitsoo.view.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:tag="100"
+                android:text="Facebook community"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/_medium_text_size" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/_10dp"
+            android:src="@mipmap/right_workout_grey" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeSubscriptionMore">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_30dp"
+                android:layout_height="@dimen/_30dp"
+                android:padding="7dp"
+                android:tint="@color/pink"
+                app:srcCompat="@drawable/subscription_icon" />
+
+            <com.fitsoo.view.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:tag="100"
+                android:text="@string/subscription"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/_medium_text_size" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/_10dp"
+            android:src="@mipmap/right_workout_grey" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_30dp"
+                android:layout_height="@dimen/_30dp"
+                android:padding="@dimen/_3dp"
+                android:tint="@color/pink"
+                android:src="@drawable/ic_log_out" />
+
+            <com.fitsoo.view.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:tag="100"
+                android:text="Logout"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/_medium_text_size" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/_10dp"
+            android:src="@mipmap/right_workout_grey" />
+
+    </RelativeLayout>
+
+</LinearLayout>

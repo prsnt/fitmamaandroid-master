@@ -1,0 +1,52 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_padding_large">17dp</dimen>
+    <dimen name="activity_padding_medium">13dp</dimen>
+    <dimen name="activity_padding_small">9dp</dimen>
+    <dimen name="activity_margin_xtrasmall">5dp</dimen>
+    <dimen name="activity_margin_small">9dp</dimen>
+    <dimen name="activity_textsize_medium">15sp</dimen>
+    <dimen name="activity_textsize_small">12sp</dimen>
+
+    <dimen name="design_navigation_icon_size" tools:override="true">32dp</dimen>
+
+
+    <!--Common dimentions-->
+    <dimen name="_1dp">2dp</dimen>
+    <dimen name="_2dp">3dp</dimen>
+    <dimen name="_3dp">5dp</dimen>
+    <dimen name="_5dp">7dp</dimen>
+    <dimen name="_8dp">10dp</dimen>
+    <dimen name="_10dp">12dp</dimen>
+    <dimen name="_15dp">19dp</dimen>
+    <dimen name="_20dp">25dp</dimen>
+    <dimen name="_30dp">32dp</dimen>
+    <dimen name="_35dp">37dp</dimen>
+    <dimen name="_margin_forms_distribution">14dp</dimen>
+
+    <dimen name="profile_header_height">230dp</dimen>
+
+    <dimen name="lg_app_logo_width">160dp</dimen>
+    <dimen name="lg_app_logo_height">110dp</dimen>
+    <dimen name="fb_gplus_padding">10dp</dimen>
+
+    <dimen name="wo_thumb_main_workoutsize">275dp</dimen>
+    <dimen name="pager_height">295dp</dimen>
+    <dimen name="wo_thumb_size">100dp</dimen>
+    <dimen name="wo_thumb_size_profile_page">120dp</dimen>
+    <dimen name="wo_thumb_challenge_size">175dp</dimen>
+
+    <dimen name="profilepage_profile_size">110dp</dimen>
+
+    <dimen name="su_profile_size">90dp</dimen>
+
+    <dimen name="su_welcome_size">122dp</dimen>
+
+    <dimen name="_very_small_text_size">13sp</dimen>
+    <dimen name="_small_text_size">15sp</dimen>
+    <dimen name="_medium_text_size">17sp</dimen>
+    <dimen name="_large_text_size">19sp</dimen>
+    <dimen name="_extra_large_text_size">21sp</dimen>
+    
+
+</resources>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/workout_pager"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <SeekBar
+            android:id="@+id/seekbar_workout"
+            style="@style/CustomProgressBarHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:max="6"
+            android:paddingLeft="@dimen/_15dp"
+            android:paddingRight="@dimen/_15dp"
+            android:thumb="@drawable/circle_pinkbg"
+            android:thumbTintMode="multiply" />
+
+        <RelativeLayout
+            android:id="@+id/rel_top_controller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekbar_workout"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/_15dp"
+            android:paddingRight="@dimen/_15dp">
+
+            <com.fitsoo.view.CustomTextView
+                android:id="@+id/txtYesterdayDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10dp"
+                android:drawableLeft="@mipmap/left_grey_workout_light"
+                android:tag="100"
+                android:text="@string/str_yesterday"
+                android:textColor="@color/textcolor_dark"
+                android:textSize="@dimen/_medium_text_size"
+                android:textStyle="bold" />
+
+            <com.fitsoo.view.CustomTextView
+                android:id="@+id/txtCurrDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10dp"
+                android:tag="100"
+                android:text="@string/str_today"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_medium_text_size"
+                android:textStyle="bold" />
+
+            <com.fitsoo.view.CustomTextView
+                android:id="@+id/txtTomorrowDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_10dp"
+                android:drawableRight="@mipmap/right_workout_grey"
+                android:tag="100"
+                android:text="@string/str_tomorrow"
+                android:textColor="@color/textcolor_dark"
+                android:textSize="@dimen/_medium_text_size"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/workout_pager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pager_height"
+            android:layout_below="@+id/rel_top_controller"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_marginRight="@dimen/_15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_15dp"
+            android:paddingRight="@dimen/_15dp">
+
+            <com.fitsoo.view.CustomTextView
+                android:id="@+id/txtCircuitTraining"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10dp"
+                android:tag="100"
+                android:text="@string/str_circuitTraining"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_extra_large_text_size" />
+
+            <LinearLayout
+                android:id="@+id/ll_presenter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCircuitTraining"
+                android:layout_marginTop="@dimen/_8dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <com.fitsoo.view.CustomTextView
+                    android:id="@+id/txtPresenterTag"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:tag="100"
+                    android:text="@string/str_presenter"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/_large_text_size" />
+
+                <com.fitsoo.view.CustomTextView
+                    android:id="@+id/txtPresenterName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:tag="100"
+                    android:textColor="@color/textcolor_dark"
+                    android:textSize="@dimen/_large_text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_work_focus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_presenter"
+                android:layout_marginTop="@dimen/_5dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <com.fitsoo.view.CustomTextView
+                    android:id="@+id/txtworkOutfocus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:tag="100"
+                    android:text="@string/str_workout_focus"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/_large_text_size" />
+
+                <com.fitsoo.view.CustomTextView
+                    android:id="@+id/txtWorkoutFocusName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:tag="100"
+                    android:textColor="@color/textcolor_dark"
+                    android:textSize="@dimen/_large_text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/div_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1dp"
+                android:layout_below="@+id/ll_work_focus"
+                android:layout_marginTop="@dimen/_10dp"
+                android:background="@color/textcolor_dark" />
+
+            <com.fitsoo.view.CustomTextView
+                android:id="@+id/txt_instructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/div_view"
+                android:layout_marginTop="@dimen/_20dp"
+                android:tag="100"
+                android:text="@string/str_instructions"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_extra_large_text_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_instructions"
+                android:layout_marginBottom="@dimen/_15dp"
+                android:orientation="vertical">
+                <!--TODO this is just static view for Demo will need to convert it to dynamic one-->
+                <com.fitsoo.view.CustomTextView
+                    android:id="@+id/txt_instruction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:tag="100"
+                    android:textSize="@dimen/_small_text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F6F6F6"
+                android:orientation="vertical">
+
+                <com.fitsoo.view.CustomTextView
+                    android:id="@+id/txt_ExtraVideos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/div_view"
+                    android:layout_gravity="center_horizontal"
+
+                    android:layout_marginBottom="-30dp"
+                    android:tag="100"
+                    android:text="Extra Videos"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_extra_large_text_size"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_Extras"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

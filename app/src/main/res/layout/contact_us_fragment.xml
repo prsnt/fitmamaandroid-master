@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/_10dp"
+    android:paddingRight="@dimen/_10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_send_message"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true">
+
+                <ImageView
+                    android:layout_width="@dimen/lg_app_logo_width"
+                    android:layout_height="@dimen/lg_app_logo_height"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/fitmama" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/rel_parent_web_content"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:layout_marginTop="@dimen/_15dp">
+
+
+                <ImageView
+                    android:id="@+id/img_mail"
+                    android:layout_width="@dimen/_20dp"
+                    android:layout_height="@dimen/_20dp"
+                    android:layout_margin="@dimen/_5dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/pink_mail_contact" />
+
+
+                <com.fitsoo.view.CustomTextView
+                    android:id="@+id/txt_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_20dp"
+                    android:layout_toRightOf="@+id/img_mail"
+                    android:tag="100"
+                    android:text="@string/fitsoo_email"
+                    android:textColor="@color/textcolor_dark"
+                    android:textSize="@dimen/_large_text_size" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rel_parent_web_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txt_send_msg_title"
+                android:layout_marginBottom="@dimen/_15dp">
+
+                <ImageView
+                    android:id="@+id/img_web"
+                    android:layout_width="@dimen/_20dp"
+                    android:layout_height="@dimen/_20dp"
+                    android:layout_margin="@dimen/_5dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/pink_globe" />
+
+                <com.fitsoo.view.CustomTextView
+                    android:id="@+id/txtwebsite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_20dp"
+                    android:layout_toRightOf="@+id/img_web"
+                    android:tag="100"
+                    android:text="@string/fitsoo_web"
+                    android:textColor="@color/textcolor_dark"
+                    android:textSize="@dimen/_large_text_size" />
+
+            </RelativeLayout>
+
+            <com.fitsoo.view.CustomTextView
+                android:id="@+id/txt_send_msg_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txt_name"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:background="@android:color/transparent"
+                android:maxLines="1"
+                android:tag="100"
+                android:text="@string/hint_send_message"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_large_text_size"
+                android:textStyle="bold" />
+
+            <com.fitsoo.view.CustomTextView
+                android:id="@+id/txt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/view_name"
+                android:background="@android:color/transparent"
+                android:maxLines="1"
+                android:tag="100"
+                android:text="Sarah Fong"
+                android:textColor="@color/line"
+                android:textSize="@dimen/_large_text_size" />
+
+            <View
+                android:id="@+id/view_name"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_above="@+id/edt_subject"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:layout_marginTop="@dimen/_3dp"
+                android:background="@color/light_grey" />
+
+            <EditText
+                android:id="@+id/edt_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/view_subject"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@android:color/transparent"
+                android:hint="@string/hint_type_subject"
+                android:maxLines="2"
+                android:textColor="@color/line"
+                android:textColorHint="@color/light_grey" />
+
+            <View
+                android:id="@+id/view_subject"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_above="@+id/edt_message"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:layout_marginTop="@dimen/_3dp"
+                android:background="@color/light_grey" />
+
+
+            <EditText
+                android:id="@+id/edt_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10dp"
+                android:background="@android:color/transparent"
+                android:gravity="left"
+                android:hint="@string/hint_type_msg"
+                android:minLines="5"
+                android:textColor="@color/line"
+                android:textColorHint="@color/light_grey"
+                android:textSize="@dimen/_large_text_size" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.fitsoo.view.CustomButton
+        android:id="@+id/btn_send_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:background="@color/pink"
+        android:tag="100"
+        android:text="SEND MESSAGE"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_medium_text_size" />
+</RelativeLayout>

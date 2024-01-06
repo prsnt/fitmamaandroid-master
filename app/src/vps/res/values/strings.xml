@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Fitsoo</string>
+
+    <string name="BASE_URL">http://fitsoo.siliconithub.us/api/users/</string>
+
+    <string name="facebook_app_id">482876648717244</string>
+    <string name="fb_login_protocol_scheme">fb482876648717244</string>
+    <string name="APPLICATION_TOKEN">Zml0c29vOmZpdHNvb0Aj</string>
+
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_Home"
+        android:enabled="true"
+        android:icon="@drawable/home"
+        android:title="@string/home"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_Challange"
+        android:enabled="true"
+        android:icon="@drawable/challenge"
+        android:title="@string/free_challange"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_Workout"
+        android:enabled="true"
+        android:icon="@drawable/workouts"
+        android:title="@string/workout"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_programs"
+        android:enabled="true"
+        android:icon="@drawable/programs"
+        android:title="@string/programs"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_more"
+        android:enabled="true"
+        android:icon="@drawable/more"
+        android:title="@string/more"
+        app:showAsAction="ifRoom" />
+</menu>

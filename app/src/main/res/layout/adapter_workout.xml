@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_parent_work"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.fitsoo.view.CustomTextView
+        android:id="@+id/txt_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:tag="100"
+        android:text="Today"
+        android:textColor="@color/textcolor_dark"
+        android:textSize="@dimen/_medium_text_size" />
+
+    <com.fitsoo.view.CustomTextView
+        android:id="@+id/txt_head_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_3dp"
+        android:tag="100"
+        android:layout_alignLeft="@+id/rel_thumbparent"
+        android:layout_alignRight="@+id/rel_thumbparent"
+        android:layout_below="@+id/txt_day"
+        android:background="@color/colorAccent" />
+
+    <RelativeLayout
+        android:id="@+id/rel_thumbparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progress_workout_adapter"
+        android:layout_below="@+id/txt_head_indicator">
+
+        <ImageView
+            android:id="@+id/img_thumb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/challenge2" />
+
+        <ImageView
+            android:id="@+id/img_play"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/play_triangular_large" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_workout_adapter"
+        style="@style/CustomProgressBarWorkout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_3dp"
+        android:layout_above="@+id/txtBottomDesc"
+        android:layout_alignLeft="@+id/rel_thumbparent"
+        android:layout_alignRight="@+id/rel_thumbparent" />
+
+    <com.fitsoo.view.CustomTextView
+        android:id="@+id/txtBottomDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5dp"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:tag="100"
+        android:text="This is some dummy description"
+        android:textColor="@color/textcolor_dark"
+        android:textSize="@dimen/_medium_text_size" />
+
+</RelativeLayout>

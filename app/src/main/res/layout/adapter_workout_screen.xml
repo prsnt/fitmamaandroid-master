@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rel_workout_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <com.fitsoo.view.CustomTextView
+            android:id="@+id/txt_head_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_8dp"
+            android:tag="100"
+            android:layout_below="@+id/txt_day"
+            android:background="@color/colorAccent" />
+
+        <RelativeLayout
+            android:id="@+id/rel_thumbparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_head_indicator">
+
+            <ImageView
+                android:id="@+id/img_thumb"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wo_thumb_main_workoutsize"
+                android:scaleType="fitXY"
+                android:src="@mipmap/challenge2" />
+
+            <ImageView
+                android:id="@+id/img_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/play_circular_workout" />
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_workout_adapter"
+            style="@style/CustomProgressBarWorkout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_8dp"
+            android:layout_alignLeft="@+id/rel_thumbparent"
+            android:layout_alignRight="@+id/rel_thumbparent"
+            android:layout_below="@+id/rel_thumbparent"
+            android:max="100"
+            android:progress="10" />
+    </RelativeLayout>
+
+</RelativeLayout>

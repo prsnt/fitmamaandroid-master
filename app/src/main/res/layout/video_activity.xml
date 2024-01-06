@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+        <VideoView
+        android:id="@+id/fitsooVideoview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/rel_contents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/img_cromecast"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_margin="@dimen/_10dp"-->
+        <!--android:src="@mipmap/chromecast" />-->
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/back_icon" />
+
+        <ImageView
+            android:id="@+id/img_back_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_toLeftOf="@+id/img_no_use"
+            android:src="@mipmap/sec_backward" />
+
+        <ImageView
+            android:id="@+id/img_no_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="false"
+            android:src="@mipmap/play_triangular_large"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/img_play_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/play_triangular_large" />
+
+        <ImageView
+            android:id="@+id/img_forward_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_toRightOf="@+id/img_no_use"
+            android:src="@mipmap/sec_forward" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_10dp">
+
+            <com.fitsoo.view.CustomTextView
+                android:id="@+id/txt_video_progress_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:tag="100"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_large_text_size" />
+
+            <SeekBar
+                android:id="@+id/progress_workout_adapter"
+                style="@style/CustomProgressBarWorkout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/txt_video_max_value"
+                android:layout_toRightOf="@+id/txt_video_progress_value"
+                android:thumb="@drawable/circle_pinkbg_small"
+                android:thumbTintMode="multiply" />
+
+            <com.fitsoo.view.CustomTextView
+                android:id="@+id/txt_video_max_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_toLeftOf="@+id/img_volume"
+                android:tag="100"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_large_text_size" />
+
+            <ImageView
+                android:id="@+id/img_volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_20dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:src="@mipmap/volume" />
+
+            <ImageView
+                android:id="@+id/img_small_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:src="@mipmap/exit_full_screen"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <androidx.mediarouter.app.MediaRouteButton
+        android:id="@+id/media_route_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_5dp"
+        android:mediaRouteTypes="user"
+        android:visibility="visible"
+        app:buttonTint="@color/blue" />
+
+</RelativeLayout>

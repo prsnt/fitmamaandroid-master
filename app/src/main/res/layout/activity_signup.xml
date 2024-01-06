@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@android:color/black" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/signup_lyt_bottom"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/signup"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_padding_large"
+            android:paddingTop="@dimen/activity_padding_large"
+            android:paddingRight="@dimen/activity_padding_large">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/edt_email"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="@dimen/su_profile_size"
+                    android:layout_height="@dimen/su_profile_size"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/profile_avtar"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="@dimen/_1dp" />
+
+                <ImageView
+                    android:id="@+id/img_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/img_profile"
+                    android:layout_alignBottom="@+id/img_profile"
+                    android:layout_margin="@dimen/_2dp"
+                    android:src="@mipmap/edit_profile_icon" />
+            </RelativeLayout>
+
+            <com.fitsoo.view.CustomEdittext
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/edt_password"
+                android:layout_marginTop="@dimen/_margin_forms_distribution"
+                android:alpha="0.8"
+                android:background="@drawable/edittext_bg"
+                android:drawableLeft="@mipmap/mail_grey"
+                android:drawablePadding="@dimen/activity_padding_small"
+                android:hint="Email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/activity_padding_small"
+                android:tag="100"
+                android:textColor="@color/white"
+                android:textColorHint="@color/alpha_white" />
+
+            <com.fitsoo.view.CustomEdittext
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ll_fname_lname"
+                android:layout_marginTop="@dimen/_margin_forms_distribution"
+                android:alpha="0.8"
+                android:background="@drawable/edittext_bg"
+                android:drawableLeft="@mipmap/password_grey"
+                android:drawablePadding="@dimen/activity_padding_small"
+                android:gravity="left"
+                android:hint="Password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:padding="@dimen/activity_padding_small"
+                android:tag="100"
+                android:textColor="@color/white"
+                android:textColorHint="@color/alpha_white"
+                android:textSize="@dimen/_medium_text_size" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_fname_lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txt_date_of_birth"
+                android:weightSum="2">
+
+                <com.fitsoo.view.CustomEdittext
+                    android:id="@+id/edt_firstname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_margin_forms_distribution"
+                    android:layout_marginRight="@dimen/activity_margin_xtrasmall"
+                    android:layout_weight="1"
+                    android:alpha="0.8"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableLeft="@mipmap/profile_input"
+                    android:drawablePadding="@dimen/activity_padding_small"
+                    android:hint="@string/signup_txt_firstname"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/activity_padding_small"
+                    android:tag="100"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/alpha_white"
+                    android:textSize="@dimen/_medium_text_size" />
+
+                <com.fitsoo.view.CustomEdittext
+                    android:id="@+id/edt_lastname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_margin_xtrasmall"
+                    android:layout_marginTop="@dimen/_margin_forms_distribution"
+                    android:layout_weight="1"
+                    android:alpha="0.8"
+                    android:background="@drawable/edittext_bg"
+                    android:drawablePadding="@dimen/activity_padding_small"
+                    android:hint="@string/signup_txt_lastname"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/activity_padding_small"
+                    android:tag="100"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/alpha_white"
+                    android:textSize="@dimen/_medium_text_size" />
+            </LinearLayout>
+
+            <com.fitsoo.view.CustomTextView
+                android:id="@+id/txt_date_of_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btn_sign_up"
+                android:layout_marginTop="@dimen/_margin_forms_distribution"
+                android:alpha="0.8"
+                android:background="@drawable/edittext_bg"
+                android:drawableLeft="@mipmap/dob_grey"
+                android:drawablePadding="@dimen/activity_padding_small"
+                android:gravity="left"
+                android:hint="@string/signup_txt_dob"
+                android:padding="@dimen/activity_padding_small"
+                android:tag="100"
+                android:textColor="@color/white"
+                android:textColorHint="@color/alpha_white"
+                android:textSize="@dimen/_medium_text_size" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.fitsoo.view.CustomTextView
+                    android:id="@+id/edt_selectLanguage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_margin_forms_distribution"
+                    android:layout_toLeftOf="@+id/imgHelp"
+                    android:alpha="0.8"
+                    android:drawableLeft="@drawable/language_new"
+                    android:drawablePadding="@dimen/activity_padding_small"
+                    android:focusable="false"
+                    android:gravity="left"
+                    android:hint="Select Language"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:padding="@dimen/activity_padding_small"
+                    android:tag="100"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/alpha_white"
+                    android:textSize="@dimen/_medium_text_size" />
+
+                <ImageView
+                    android:id="@+id/imgHelp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/edt_selectLanguage"
+                    android:layout_alignBottom="@+id/edt_selectLanguage"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/help_signup" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edt_selectLanguage"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbtnEnglish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_pink_small_rounded_corner"
+                        android:buttonTint="@color/white"
+                        android:checked="true"
+                        android:padding="@dimen/_5dp"
+                        android:text="@string/english"
+                        android:textColor="@android:color/white" />
+
+                    <RadioButton
+                        android:id="@+id/rbtnHebrew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/bg_pink_small_rounded_corner"
+                        android:buttonTint="@color/white"
+                        android:padding="@dimen/_5dp"
+                        android:text="@string/hebrew"
+                        android:textColor="@android:color/white" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <com.fitsoo.view.CustomButton
+                android:id="@+id/btn_sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ll_or_option"
+                android:layout_marginTop="@dimen/_15dp"
+                android:background="@drawable/bg_pink_small_rounded_corner"
+                android:tag="100"
+                android:text="@string/login_txt_signup"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_medium_text_size" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_or_option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ll_social_option"
+                android:layout_marginTop="@dimen/_15dp"
+                android:layout_marginBottom="@dimen/_15dp"
+                android:gravity="center_vertical"
+                android:weightSum="3">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/line" />
+
+                <com.fitsoo.view.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:alpha="0.8"
+                    android:gravity="center"
+                    android:tag="103"
+                    android:text="@string/signup_txt_signwith"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/_small_text_size" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/line" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_social_option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_above="@+id/txt_terms_and_conditions"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/btnfacebook"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/activity_margin_small"
+                    android:layout_weight="1"
+                    android:background="@color/fbblue"
+                    android:gravity="center">
+
+                    <com.fitsoo.view.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawablePadding="@dimen/activity_padding_small"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/fb_gplus_padding"
+                        android:tag="100"
+                        android:text="@string/login_txt_facebook"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_medium_text_size"
+                        app:drawableLeftCompat="@drawable/ic_facebook" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/btnGoogle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_margin_small"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:background="@color/google"
+                    android:gravity="center">
+
+                    <com.fitsoo.view.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawablePadding="@dimen/activity_padding_small"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/fb_gplus_padding"
+                        android:tag="100"
+                        android:text="@string/login_txt_google"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_medium_text_size"
+                        app:drawableLeftCompat="@drawable/ic_gpluic_s" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.fitsoo.view.CustomTextView
+                android:id="@+id/txt_terms_and_conditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginBottom="@dimen/_20dp"
+                android:alpha="0.7"
+                android:gravity="center"
+                android:tag="103"
+                android:text="@string/login_txt_terms"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_very_small_text_size" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/signup_img_goback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.7"
+        android:padding="@dimen/activity_padding_small"
+        android:src="@mipmap/grey_back" />
+
+    <LinearLayout
+        android:id="@+id/signup_lyt_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/nav_bg"
+        android:gravity="center"
+        android:padding="@dimen/activity_padding_medium">
+
+
+        <com.fitsoo.view.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="103"
+            android:text="@string/signup_txt_newmember"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_medium_text_size" />
+
+        <com.fitsoo.view.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_margin_xtrasmall"
+            android:tag="101"
+            android:text="@string/login_txt_login"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_medium_text_size" />
+    </LinearLayout>
+</RelativeLayout>

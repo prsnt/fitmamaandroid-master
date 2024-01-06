@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "188804947207",
+    "firebase_url": "https://fitmama-6c673.firebaseio.com",
+    "project_id": "fitmama-6c673",
+    "storage_bucket": "fitmama-6c673.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188804947207:android:2e3bf961aad5aa6c7039a2",
+        "android_client_info": {
+          "package_name": "com.fitsoo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "188804947207-n3pks5u7dctj2h868d39oaonmu1cvkbp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAogyrb_2-dsPct2BzYXYdk3ONvUAWfcJQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "188804947207-n3pks5u7dctj2h868d39oaonmu1cvkbp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
